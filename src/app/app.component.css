@@ -36,19 +36,48 @@
   font-style: italic;
 }
 
+.mat-cell {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  -ms-word-break: break-all;
+  /* This is the dangerous one in WebKit, as it breaks things wherever */
+  word-break: break-all;
+  /* Instead use this non-standard one: */
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 .mat-cell:nth-child(1),
 .mat-header-cell:nth-child(1){
-  flex: 0 0 6%;
+  flex: 0 0 5%;
 }
 
 .mat-cell:nth-child(2),
 .mat-header-cell:nth-child(2){
-  flex: 0 0 30%;
+  flex: 0 0 8%;
 }
 
 .mat-cell:nth-child(3),
 .mat-header-cell:nth-child(3){
-  flex: 0 0 6%;
+  flex: 0 0 10%;
+}
+
+/* .mat-cell:nth-child(4),
+.mat-header-cell:nth-child(4){
+  flex: 0 0 30%;
+} */
+
+.mat-cell:nth-child(5),
+.mat-header-cell:nth-child(5),
+.mat-cell:nth-child(6),
+.mat-header-cell:nth-child(6){
+  flex: 0 0 10%;
 }
 
 .mat-cell:nth-child(7),

@@ -1,7 +1,6 @@
 <mat-toolbar color="primary">
-  <span>Angular 8 MatTable CRUD Example</span>
+  <span>Reflections Table</span>
   <span class="spacer"></span>
-  Reload data:
   <button mat-icon-button (click)="refresh()">
     <mat-icon>refresh</mat-icon>
   </button>
@@ -27,28 +26,32 @@
     </ng-container>
 
     <ng-container matColumnDef="title">
-      <mat-header-cell *matHeaderCellDef mat-sort-header>Title</mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{row.title}}</mat-cell>
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Episode</mat-header-cell>
+      <!-- <mat-cell *matCellDef="let row"> {{row.title}}</mat-cell> -->
+      <mat-cell *matCellDef="let row"> 12</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="state">
       <mat-header-cell *matHeaderCellDef mat-sort-header>State</mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{row.state}}</mat-cell>
+      <!-- <mat-cell *matCellDef="let row"> {{row.state}}</mat-cell> -->
+      <mat-cell *matCellDef="let row"> Completed</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="url">
-      <mat-header-cell *matHeaderCellDef mat-sort-header>Url</mat-header-cell>
+      <mat-header-cell *matHeaderCellDef mat-sort-header>Content</mat-header-cell>
       <mat-cell *matCellDef="let row"> {{row.url}}</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="created_at">
       <mat-header-cell *matHeaderCellDef mat-sort-header>Created at</mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{row.created_at}}</mat-cell>
+      <!-- <mat-cell *matCellDef="let row"> {{row.created_at}}</mat-cell> -->
+      <mat-cell *matCellDef="let row"> 04/07/2020</mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="updated_at">
       <mat-header-cell *matHeaderCellDef mat-sort-header>Updated at</mat-header-cell>
-      <mat-cell *matCellDef="let row"> {{row.updated_at}}</mat-cell>
+      <!-- <mat-cell *matCellDef="let row"> {{row.updated_at}}</mat-cell> -->
+      <mat-cell *matCellDef="let row"> 04/07/2020</mat-cell>
     </ng-container>
 
     <!-- actions -->
